@@ -49,7 +49,7 @@ inquirer
   ])
   .then((name) => {
     // let { title, description, toc, usage, license, contribution, tests, questions } = name
-    fs.writeFile("README.md", genMarkdown(name), (err) =>
+    fs.writeFile("yourREADME.md", genMarkdown(name), (err) =>
       err ? console.error(err) : console.log("Success!")
     );
   });
